@@ -1,5 +1,5 @@
 bpm = io.read() 
-
+print("-----------")
 -- あなたの適正速度(もし全体的に知りたい場合は　0　って入力してください)
 prop = 720
 
@@ -17,7 +17,7 @@ for i = 1, Chs, 1 do
 	elseif bpm*HS[i] >= prop-pras and bpm*HS[i] <= prop+pras then
 		print(bpm*HS[i] .. " " ..Nhs[i])
 	end
-	-- これ以上上がんない時は
+	-- たぶん目指できる速度(変えたいなら変えればいいじゃない)
 	if bpm*HS[i] >= 1400 then
 		break
 	end
